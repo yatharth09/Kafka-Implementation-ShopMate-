@@ -78,6 +78,18 @@ docker logs -f email-service
 docker logs -f order-history-service
 
 ```
+### **1️⃣ Example data**
+
+```
+{
+  "userId": 42,
+  "products": [
+    { "id": 1, "name": "Keyboard", "price": 999 },
+    { "id": 2, "name": "Mouse", "price": 499 }
+  ]
+}
+```
+
 
 ## **Performance Improvements**
 
