@@ -63,19 +63,15 @@ Each service is fully isolated and runs in its own container.
 ## ⚙️ Running the Project
 
 ### **1️⃣ Clone the repository**
-```
 bash
+```
+
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
 docker compose up --build
 POST http://localhost:3000/order
-{
-  "userId": 42,
-  "products": [
-    { "id": 1, "name": "Keyboard", "price": 999 },
-    { "id": 2, "name": "Mouse", "price": 499 }
-  ]
-}
+
+#For generating logs of different services
 docker logs -f analytics-service
 docker logs -f payment-service
 docker logs -f email-service
@@ -83,12 +79,12 @@ docker logs -f order-history-service
 
 ```
 
-##⚡ **Performance Improvements**
+## **Performance Improvements**
 
 
 - Kafka handles event distribution, so slow tasks no longer block the API.
 
-## ** Why Kafka**
+## **Why Kafka**
 - High throughput
 
 - Parallel processing
