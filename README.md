@@ -11,6 +11,11 @@ Huge improvement in speed, scalability, and reliability.
 
 ---
 
+## Demo
+
+![alt text](./client/public/kafka-1.png)
+![alt text](./client/public/kafka-2.png)
+
 ## 🚀 What This Project Does
 
 Whenever a user places an order, Kafka publishes events to different topics, and **multiple services consume them simultaneously**:
@@ -40,8 +45,7 @@ Each microservice is isolated, scalable, and stateless — exactly how event-dri
 
 ### **Backend**
 - Node.js / Express.js  
-- KafkaJS (Kafka client for Node.js)  
-- Nodemailer (Emails)
+- KafkaJS (Kafka client for Node.js)
 
 ### **Infrastructure**
 - Kafka (Multi-broker)  
